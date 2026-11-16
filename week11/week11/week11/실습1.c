@@ -17,8 +17,8 @@ int main(void) {
             break;
         }
 
-        if (*p >= 'a' && *p <= 'z') {
-            *p = *p - 'a' + 'A';
+        if (*p >= 'A' && *p <= 'Z') {
+            *p = *p - 'A' + 'a';
         }
 
         if (*p != ' ') {
@@ -28,7 +28,7 @@ int main(void) {
         p++;
     }
 
-    printf("대문자 : %s\n", str);
+    printf("소문자 : %s\n", str);
     printf("글자 수 (공백 제외) : %d\n", count);
 
     return 0;
